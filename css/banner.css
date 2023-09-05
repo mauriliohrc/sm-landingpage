@@ -1,0 +1,151 @@
+.col-6 {
+    flex: 2
+}
+
+#banner {
+    display: flex;
+    padding: 0;
+    background-color: #2ba64e;
+    margin-top: 0px;
+    width: 100%;
+    min-height: 900px;
+    max-height: 900px;
+    z-index: 300;
+    overflow: hidden;
+}
+
+#logo-negativa-banner {
+    opacity: 0.3;
+    height: 1100px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+#homem {
+    max-height: 900px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+#limpe-seu-nome {
+    position: absolute;
+    margin: 50px 0 0 100px;
+    min-width: 800px;
+    min-height: 300px;
+    color: white;
+
+    text-align: revert;
+
+    font-size: 160px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#d30-dias {
+    background-color: white;
+    color: #f66d42;
+}
+
+#limpe-seu-nome::after {
+    content: "";
+    width: 100%;
+}
+
+#recomeco {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    border-top: 10px solid #f66d42;
+    margin-top: -4px;
+    padding-top: 10px;
+}
+
+#faca-seu-orcamento {
+    border-radius: 40px;
+
+    position: absolute;
+    margin: 50px 0 0 100px;
+    padding-top: 40px;
+    bottom: -60px;
+
+    min-width: 800px;
+    min-height: 500px;
+    background-color: white;
+
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#faca-seu-orcamento p {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#formulario2 input {
+    border-radius: 19px;
+    border: 3px solid #cbc6c6;
+    width: 90%;
+    height: 60px;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 0 5px 0;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 19px;
+    color: #cbc6c6;
+}
+
+::placeholder { color: #cbc6c6; opacity: 1; }
+:-ms-input-placeholder { color: #cbc6c6; }
+::-ms-input-placeholder { color: #cbc6c6; }
+
+.botao-orcamento {
+    display: inline-block;
+    border-radius: 15px;
+    width: 40%;
+    height: 60px;
+    background-color: #f66d42;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 30px;
+    margin-top: 11px;
+}
+
+@media (max-width: 1100px) {
+
+    #banner {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #homem {
+        display: none;
+    }
+
+    #limpe-seu-nome {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    #faca-seu-orcamento {
+        margin: 0;
+        text-align: center;
+    }
+
+    #logo-negativa-banner {
+        position:relative;
+        max-width:100%;
+        max-height:100%;
+    }
+
+    #limpe-seu-nome {
+        margin: 0;
+    }
+
+}

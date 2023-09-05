@@ -1,0 +1,12 @@
+.menu-rodape {
+    display: flex;
+    padding: 0 20px 0 20px;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.logo-rodape {
+    padding-left: 30px;
+    height: 100px;
+}

@@ -1,0 +1,158 @@
+.col-6 {
+    flex: 2
+}
+
+#banner2 {
+    display: flex;
+    padding: 0;
+    background-color: #2ba64e;
+    margin-top: 0px;
+    width: 100%;
+    min-height: 500px;
+    max-height: 900px;
+    z-index: 300;
+    overflow: hidden;
+
+
+    background-image: url("../img/logo_negativa_bg.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 10%;
+}
+
+#logo-negativa-banner-bottom {
+    opacity: 0.3;
+    height: 1100px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#homem {
+    max-height: 900px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+#frase-impacto-small {
+    display: none;
+}
+
+#frase-impacto {
+    position: absolute;
+    justify-content: center;
+    min-width: 800px;
+    min-height: 300px;
+    color: white;
+    right: 0;
+    padding-top: 80px;
+    text-align: revert;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#frase-contraste {
+    background-color: #f66d42;
+    color: white;
+}
+
+#limpe-seu-nome::after {
+    content: "";
+    width: 100%;
+}
+
+#recomeco {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    border-top: 10px solid #f66d42;
+    margin-top: -4px;
+    padding-top: 10px;
+}
+
+#faca-seu-orcamento-bottom {
+    border-radius: 40px;
+    position: absolute;
+    margin: 47px 0px 116px -30px;
+    padding-top: 27px;
+    bottom: -48px;
+    min-width: 800px;
+    min-height: 368px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#faca-seu-orcamento-bottom p {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#formulario2 input {
+    border-radius: 19px;
+    border: 3px solid #cbc6c6;
+    width: 90%;
+    height: 60px;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 0 5px 0;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 19px;
+    color: #cbc6c6;
+}
+
+::placeholder { color: #cbc6c6; opacity: 1; }
+:-ms-input-placeholder { color: #cbc6c6; }
+::-ms-input-placeholder { color: #cbc6c6; }
+
+.botao-orcamento {
+    display: inline-block;
+    border-radius: 15px;
+    width: 40%;
+    height: 60px;
+    background-color: #f66d42;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 30px;
+    margin-top: 11px;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    #banner2 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #frase-impacto {
+        display: none !important;
+    }
+
+    #faca-seu-orcamento-bottom {
+        position: relative;
+        flex: 1;
+    }
+
+    #frase-impacto-small {
+        flex: 1;
+        display: block !important; 
+        color: white;
+        right: 0;
+        padding: 140px 20px 0 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 75px;
+        font-weight: bold;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+}

@@ -1,0 +1,178 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rows {
+    -webkit-flex-direction: row !important; 
+    flex-direction: row !important; 
+}
+
+.row {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.marca-dagua {
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url("../img/logo-marca-dagua.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sombra {
+    background-color: #f66d42;
+    height: 15px;
+}
+
+.block-container {
+    margin: 50px 0 0px 0;  
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-green {
+    background: rgb(46, 209, 95);
+    background: linear-gradient(80deg, rgb(18, 114, 34) 2%, rgb(46, 209, 95) 100%);
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 27px
+}
+
+.block-orange {
+    background: rgb(176, 96, 41);
+    background: linear-gradient(80deg, rgba(176, 96, 41, 1) 2%, rgb(225, 87, 18) 100%);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 27px
+}
+
+.block-green {
+    background: rgb(46, 209, 95);
+    background: linear-gradient(80deg, rgb(18, 114, 34) 2%, rgb(46, 209, 95) 100%);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 27px
+}
+
+.block-orange a {
+    color: white !important
+}
+
+.block-green a {
+    color: white !important
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+    box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+}
+
+.block a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.block a:hover {
+    background-color: green;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+    box-shadow: 4px 3px 21px -5px rgba(0, 0, 0, 0.68);
+}
+
+#servicos {
+    justify-content: center;
+    text-align: center;
+}
+
+#sevicos img {
+    max-width: 100%;
+}
+.tablinks .button-text {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.laranja {
+    background-color: #f66d42 !important;
+}
+
+.linha {
+    position: relative;
+    background-color: #f66d42;
+    height: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.flex-3 {
+    
+    flex: 2
+}
+
+.flex-1 {
+    display: flex;
+    flex: 1;
+}
+
+.sl-esquerda {
+    flex: 3
+}
+
+.sl-direita {
+    flex: 1
+}
+
+.btn {
+    width: 400px;
+    height: 100%;
+    line-height: 60px;
+    background-color: #f66d42;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.instagram {
+    padding: 0px 40px 0 40px !important;
+}
+
+#servicos-img {
+    max-width: 100%;
+}
+
+#img-rodape {
+    width: 100%;
+}

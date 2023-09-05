@@ -1,0 +1,13 @@
+
+@media (max-width: 1200px) {
+    .banner-direita {
+        display: none;
+    }
+
+    .banner-esquerda {
+        text-align: center;
+        background-size: contain;
+        min-height: 300px;
+        background-position: center;
+    }
+}
