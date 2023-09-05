@@ -1,0 +1,10 @@
+
+.rodape {
+    background-image: url("../img/rodape.png");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    z-index: 900;
+    font-weight: bold;
+    padding: 40px 30px 30px 30px;
+    height: 580px !important;
+}

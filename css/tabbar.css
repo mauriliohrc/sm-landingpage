@@ -1,0 +1,78 @@
+#sobre {
+    padding: 0 !important;
+    background-color: rgb(233, 233, 233);
+    background-image: url("../img/bgtab.png");
+    background-size: cover;
+    background-image: url("../img/bgtab.png"),  linear-gradient(
+        0deg,
+        hsl(0deg 0% 99%) 0%,
+        hsl(0deg 3% 98%) 11%,
+        hsl(0deg 3% 96%) 20%,
+        hsl(0deg 4% 94%) 29%,
+        hsl(0deg 4% 93%) 38%,
+        hsl(0deg 4% 91%) 47%,
+        hsl(0deg 4% 89%) 56%,
+        hsl(0deg 4% 88%) 66%,
+        hsl(0deg 4% 86%) 78%,
+        hsl(0deg 4% 85%) 100%
+      );
+}
+
+
+.button-text {
+    margin-left: 8px;
+    vertical-align: middle !important;
+}
+
+
+/* Estilos da tabbar */
+.tabbar {
+    background-color: rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    height: 80px;
+
+    -moz-box-shadow: 0 4px 4px rgba(225, 225, 225, 0.861);
+    -webkit-box-shadow: 0 4px 4px rgba(225, 225, 225, 0.861);
+    box-shadow: 0 4px 4px rgba(225, 225, 225, 0.861);
+}
+
+.tabbar .active {
+    border-bottom: 8px solid green !important;
+}
+
+.tablinks {
+    width: 100%;
+    margin: 0 1px 0 1px;
+    background-color: white;
+    border-bottom: 4px solid white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.tablink {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tablink:hover {
+    background-color: #ccc;
+}
+
+/* Estilos dos conteúdos */
+.tabcontent {
+    display: none;
+}
+
+/* Estilos do conteúdo ativo */
+.tabcontent.show {
+    display: block;
+    font-size: 20px;
+}
+
+

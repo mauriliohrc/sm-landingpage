@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soluções Moura</title>
+
+    <link rel="stylesheet" type="text/css" href="css/zero.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-rodape.css">
+    <link rel="stylesheet" type="text/css" href="css/banner.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+    <link rel="stylesheet" type="text/css" href="css/tabbar.css">
+    <link rel="stylesheet" type="text/css" href="css/servico.css">
+    <link rel="stylesheet" type="text/css" href="css/testemunho.css">
+    <link rel="stylesheet" type="text/css" href="css/faq.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/rodape.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+    <script src="js/tab.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;285;300;500;600&display=swap" rel="stylesheet">
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body >
+    <header id="menu">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Soluções Moura" id="logo">
+                <img src="img/lgpd.png" alt="Soluções Moura" id="logo">
+            </div>
+
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="#sobre">SOBRE NÓS</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#perguntas-frequentes">PERGUNTAS FREQUENTES</a></li>                    
+                    <li><a href="#posts">NOSSOS POSTS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sombra">
+    </section>
+
+    <section class="banner" style="position: relative;" id="banner">
+        <picture>
+            <img src="img/logo_negativa.png" id="logo-negativa-banner">
+            <img class="homem" src="img/homem.png" id="homem" alt="Homem">
+        </picture>
+
+        <div id="limpe-seu-nome">
+            <div>LIMPE SEU NOME</div>
+            <div>EM <span id="d30-dias">30 DIAS ÚTEIS &nbsp;</span></div>
+            <div class="recomeco">"seu recomeço começa aqui"</div>
+        </div>
+ 
+        <div class="faca-seu-orcamento" id="faca-seu-orcamento">
+            <div>
+                <p>FAÇA <b>SEU</b> ORÇAMENTO</p>
+            </div>
+            <div>
+                <img src="./img/faca-seu-orcamento.png">
+            </div>
+
+            <form class="formulario2" id="formulario2" onsubmit="return validarFormulario09()">
+                <input type="text" id="formNome09" placeholder="NOME COMPLETO">
+                <input type="text" id="formWhatsapp09" placeholder="TELEFONE">
+                <input type="text" id="formEmail09" placeholder="EMAIL">
+                <a href="javascript: validarFormulario09()" class="botao-orcamento-form">FAZER MEU ORÇAMENTO</a>
+            </form>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <img id="servicos-img" src="./img/nossos-servicos.png">
+    </section>
+
+    <section id="sobre">
+        <div class="tabbar">
+
+            <button class="tablinks" onclick="openTab(event, 'limpanome')" class="icon-button">
+                <span class="button-text">LIMPA NOME</span>
+            </button>
+
+            <button class="tablinks" onclick="openTab(event, 'bacen')" class="icon-button">
+                <span class="button-text">BACEN</span>
+            </button>
+
+            <button class="tablinks" onclick="openTab(event, 'ccf')" class="icon-button">
+                <span class="button-text">CCF (Cheques)</b></span>
+            </button>
+
+            <button class="tablinks active" onclick="openTab(event, 'nome')" class="icon-button">
+                <span class="button-text">SCORE</span>
+            </button>
+        </div> 
+
+        <div id="limpanome" class="tabcontent" style="padding: 20px">
+            <p>
+                Seu nome limpo em até 30 dias úteis! Nossa equipe de especialista atua de forma 100% legal, por meio de procedimentos jurídicos contra os órgãos de proteção ao crédito. Solicitando a baixa de todos os apontamentos constantes em seu CPF ou CNPJ reabilitando o seu poder de compra no mercado.<br/><br/>
+<b>1° - Diagnóstico:</b></b><br/>
+Faremos uma análise de suas dívidas onde iremos verificar a melhor proposta de reabilitação para seu CPF/CNPJ. De forma 100% Legal.<br/>
+<br/>
+<b>2° - Receba a Proposta:</b><br/>
+Com os apontamentos levantados, iremos te passar uma proposta de regularização do seu nome, e restauração de seu score de crédito.<br/>
+<br/>
+<b>3° - Limpamos seu Nome:</b><br/>
+Excluímos todos os apontamentos do seu CPF/CNPJ dos órgãos de proteção ao crédito, pelo período de 12 meses.<br/>
+<br/>
+<b>4° - Blindagem de CPF/CNPJ:</b><br/>
+Garantimos que todos os apontamentos retirados do seu CPF/CNPJ não retornarão durante os próximos 12 meses.<br/>
+<br/>
+<b>5° - Score:</b><br/>
+De forma rápida restauramos seu Score para uma pontuação considerada boa. Possibilitando um novo recomeço.<br/>
+<br/>
+<b>6° - Liberdade e Crédito ao seu alcance:</b><br/>
+Após o processo seu nome estará preparado para obter créditos junto as instituições financeiras, a depender da complexidade de cada caso.<br/>
+<br/>
+<b>AMPARO LEGAL</b><br/>
+Nossos especialistas utilizam ferramentas jurídicas, levando em consideração o Código de Defesa do Consumidor para excluir seus apontamentos direcionados ao seu CPF ou CNPJ. Abaixo temos alguns textos de leis aos quais consideramos importantes e dentre outros que utilizamos como base nos processos. <br/>
+            </p>
+        </div>
+
+        <div id="bacen" class="tabcontent" style="padding: 20px">
+            <p>
+                O que é o SCR do Banco Central?<br />
+                <br />
+                O primeiro passo para retirar o seu nome do SCR do Banco Central é entender como essa ferramenta funciona. Assim, o SCR é o Sistema de Informações de Crédito que registra as operações acima de R$ 200,00.
+                Nesse sentido, sempre que você solicita um empréstimo no seu banco, ou realiza um financiamento. A informação é repassada para o Banco Central.<br />
+                <br />
+                Da mesma forma, sempre que você atrasa o pagamento das parcelas, ou fica muitos meses sem pagar. O Banco Central é notificado. Assim, o seu nome fica registrado como inadimplente.<br /><br />
+                O pior é que ainda que você regularize a sua vida financeira, continuará com o nome sujo no SCR. Ainda mais se tiver realizado um acordo com o banco ou pelos aplicativos como o Serasa para pagar a dívida.<br /><br />
+                Pois, todo o valor que os credores oferecem como desconto para os inadimplentes é registrado no SCR como saldo devedor (prejuízo). Que pode ser consultada por outros bancos na hora de liberar crédito.<br /><br />
+                Esse é um sistema ilegal que usa a burocracia para cansar o consumidor que tenta limpar seu nome. Logo, é importante conhecer os seus direitos para se livrar do SCR do Banco Central.<br />
+            </p>
+        </div>
+
+        <div id="nome" class="tabcontent show" style="padding: 20px">
+            <p>
+                Seu nome blindado em até <b>30 dias úteis</b>! (CPF ou CNPJ) Nossa equipe de espe-
+                cialista atua de forma <b>100% legal</b>, por meio de procedimentos jurídicos contra
+                os órgãos de proteção ao crédito. Solicitando a baixa de todos os apontamentos
+                constantes em seu CPF ou CNPJ reabilitando o seu poder de compra no merca-
+                do.
+                <br /><br />
+                <b>1º - Diagnóstico:</b><br />
+                Faremos uma análise de suas dívidas onde iremos verificar a melhor proposta de
+                reabilitação para seu CPF/CNPJ. De forma 100% Legal.<br />
+                <br />
+                <b>2º - Receba a Proposta:<br /></b>
+                Com os apontamentos levantados, iremos te passar uma proposta de regulari-
+                zação do seu nome, e restauração de seu score de crédito.<br />
+                <br />
+                <b>3º - Limpamos seu Nome:<br /></b>
+                Excluímos todos os apontamentos do seu CPF/CNPJ dos órgãos de proteção ao
+                crédito, pelo período de 12 meses.<br />
+                <br />
+                <b>4º - Blindagem de CPF/CNPJ:<br /></b>
+                Garantimos que todos os apontamentos retirados do seu CPF/CNPJ não retor-
+                narão durante os próximos 12 meses.<br />
+                <br />
+                <b>5º - Score:</b><br />
+                De forma rápida restauramos seu Score para uma pontuação considerada boa.
+                Possibilitando um novo recomeço.<br />
+            </p>
+        </div>
+
+        <div id="ccf" class="tabcontent" style="padding: 20px">
+            <p>
+                Como resolver cheque sem fundo e nome sujo?<br /><br />
+                Os cheques podem facilitar sua vida na hora do pagamento, mas um cheque sem fundos pode sujar seu nome e criar uma grande dor de cabeça. Isso pode acontecer com todo mundo, seja por um imprevisto ou um descuido no dia em que o cheque deveria ser compensado.<br /><br />
+                Entretanto, caso isso ocorra, é seu direito ser notificado sobre a inserção de seus dados no CCF e demais órgãos antes de quaisquer negativações inerentes ao cheque, tal ausência faz com que as inscrições sejam irregulares por falta dessa formalidade. Além da ausência de notificação prévia, pode ocorrer negativações incompatíveis com o teor da lei do cheque, tendo em vista que após o prazo de seis meses de sua emissão, já não possui os quesitos do título de crédito originário, não devendo ser tratado como tal. <br /><br />
+                As irregularidades acima podem ser sanadas pela via administrativa ou ainda, pelo judiciário a fim de retirar as restrições indevidas. Não deixe de exercer seu direito.<br /><br />
+            </p>
+        </div>
+
+        <div class="block-container">
+            <div class="block block-orange">
+                <a href="http://wa.me/556296853899" target="_blank">LIMPE SEU NOME AGORA</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="linha laranja">&nbsp;</section>
+
+    <!-- <section class="servicos-legalizados">
+        <div class="flex-3">
+
+            <div class="row sublinha">
+                <p class="titulo">SERVIÇO TOTALMENTE LEGALIZADO</p>
+            </div>
+
+            <div class="row">
+                <p class="texto">
+                    <br/>
+                    Quem quer regularizar a situação financeira tem pressa, não é mesmo? Ter o nome sujo pode complicar em várias situações, como não conseguir um cartão de crédito, um empréstimo até mesmo um financiamento. Isso porque o seu nome vai para a lista dos órgãos de proteção ao crédito, como SPC e Serasa, Boa Vista, CENPROT e Vadu. Mas você pode ter seu nome limpo, antes mesmo de quitar sua dívida!<br/>
+                    <br/>
+                    <b>COMO ISSO É POSSÍVEL?</b><br/>
+                    Através de uma liminar, retiramos todos os apontamentos dos nossos associados do, SERASA, SPC, BOA VISTA, CENPROT e Vadu, cheques devolvidos, pedido de falência, protestos, impostos e ações. Aumentamos o Score do seu CPF/CNPJ, tudo dentro da lei e conforme os direitos do consumidor, embasado na lei de N°8078 de 11/09/1990 que dispõe sobre a proteção do consumidor e outras providências como dignidade de compra, dentro do artigo 42/43 do CDC, tudo isso em até 30 dias.<br/><br/>
+                </p>
+                
+            </div>
+
+            <div class="row">
+                <div class="flex-1">
+                        <p class="btn">REVOLUCIONE SUAS FINANÇAS</p>
+                </div>
+                <div class="flex-3 linha-revolucione">
+                        <div class="linha laranja"> &nbsp; </div>
+                </div>
+            </div>
+
+            <div class="flex-1 container-video-servicos">
+                <div class="servicos-videos">
+                    <div class="video">
+                        <iframe height="95%" width="95%" src="https://www.youtube-nocookie.com/embed/oM16ODkm-Vo?si=8NamXKzUGgD5Fm8a&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="entenda">
+                        <p class="btn">ENTENDA SOBRE AQUI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <div id="posts" class="instagram">
+        <div class="row sublinha verde">
+            <p class="titulo">NOSSOS POSTS</p>
+        </div>
+
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-44436e3f-9131-40e9-8623-20a8834d9bf4"></div>
+    </div>
+
+    <section class="faq-section" id="perguntas-frequentes">
+        <div class="row sublinha">
+            <p class="titulo">PERGUNTAS FREQUENTES (FAQ)</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Este Serviço é legal?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nossos especialistas trabalham dentro da legalidade de forma jurídica, levando em
+                        consideração o Código de Defesa do Consumidor.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>É garantido que meu nome será blindado?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Garantimos em contrato que seu CPF ou CNPJ que seu nome será ocultado no prazo máximo de 30
+                        até 60 dias úteis a partir do fechamento do contrato, a blindagem é válida para os
+                        apontamentos existentes que retiramos no processo de limpa nome, blindagem de novos
+                        apontamentos não existe.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Meu Score será restituído para qual pontuação?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Restauramos o seu Score para uma pontuação considerada boa.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Meu nome poderá voltar a ficar sujo?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, não existe blindagem para novos apontamentos.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Vou conseguir crédito ou financiamento em outras instituições?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Com seu nome sem apontamentos e uma boa pontuação de Score e sem apontamentos no Bacen, você
+                        estará enquadrado nos critérios necessários para voltar a ter crédito no mercado.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Minhas dívidas Serão Pagas?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Esta ação não elimina ou quita a sua dívida. Porém, contratando os serviços da Soluções Moura
+                        em até 30 dias úteis, após a assinatura do contrato e confirmação do pagamento, seu nome é
+                        retirado dos órgãos de proteção ao crédito e seu Score será restaurado. Assim, você pode
+                        optar por renegociar a sua dívida posteriormente.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Quais as formas de pagamento?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nosso corretor ou gestor, irá elaborar uma proposta de pagamento que enquadra – se, em seu
+                        perfil financeiro.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Como faço para verificar minhas pendências?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Através de uma consulta nos órgãos de proteção ao crédito conseguimos levantar todas as
+                        dívidas apontadas em seu CPF ou CNPJ. </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>Quanto custa a consulta do Bacen (Extrato SCR)</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Não tem nenhum custo, disponibilizamos o passo a passo de como fazer a consulta totalmente
+                        sem custo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-container">
+            <div class="block block-orange">
+                <a href="http://wa.me/556296853899" target="_blank">TENHO OUTRA DÚVIDA</a>
+            </div>
+        </div>
+    </section>
+  
+
+
+    <section class="linha laranja">&nbsp;</section>
+    <section class="banner2" id="banner2" style="position: relative;">
+        <div class="frase-impacto-small" id="frase-impacto-small">
+            <div>"UMA CONTA ATRASADA</div>
+            <div>NÃO <span id="frase-contraste">DEFINE QUEM</span> &nbsp;VOCÊ</div>
+            <div>OU SUA EMPRESA SÃO"</div>
+        </div> 
+
+        <div class="faca-seu-orcamento-bottom" id="faca-seu-orcamento-bottom">
+            <div id="contato">
+                <p>DEIXE SEU CONTATO E LIMPE SUAS DÍVIDAS</p>
+            </div>
+
+            <form class="formulario3" id="formulario2" onsubmit="return validar()">
+                <input type="text" id="formNome10" placeholder="NOME COMPLETO">
+                <input type="text" id="formWhatsapp10" placeholder="TELEFONE">
+                <input type="text" id="formEmail10" placeholder="EMAIL">
+                <a href="javascript: validarFormulario10()" class="botao-orcamento-form2">FAZER MEU ORÇAMENTO</a>
+            </form>
+        </div>
+
+        <div id="frase-impacto">
+            <div>"UMA CONTA ATRASADA</div>
+            <div>NÃO <span id="frase-contraste">DEFINE QUEM</span> &nbsp;VOCÊ</div>
+            <div>OU SUA EMPRESA SÃO"</div>
+        </div> 
+    </section>
+    <section class="linha laranja">&nbsp;</section>
+
+
+    <header id="menu-rodape">
+        <div class="logo-rodape">
+            <img id="img-rodape" src="img/logo_rodape.png" alt="Soluções Moura">
+        </div>
+
+        <div class="menu2">
+
+        </div>
+       
+    </header>
+
+
+
+    <script>
+        function sendForm(dados) {
+            axios
+                .post("contato.php", dados, {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded;",
+                    },
+                })
+                .then(function (response) {
+                    console.log(response.data);
+                    alert("Contato enviado com sucesso, entraremos em contato.");
+                })
+                .catch(function (error) {
+                    alert("Erro ao enviar seu contato. Tente novamente mais tarde.");
+                    console.log(error);
+                });
+        }
+        
+        function validarFormulario10() {
+            var nome = document.getElementById("formNome10").value;
+            var whatsapp = document.getElementById("formWhatsapp10").value;
+            var email = document.getElementById("formEmail10").value;
+            var dados = {
+                nome: nome,
+                whatsapp: whatsapp,
+                email: email
+            };
+            sendForm(dados)
+            return false;
+        }
+
+        function validarFormulario09() {
+            var nome = document.getElementById("formNome09").value;
+            var whatsapp = document.getElementById("formWhatsapp09").value;
+            var email = document.getElementById("formEmail09").value;
+            var dados = {
+                nome: nome,
+                whatsapp: whatsapp,
+                email: email
+            };
+            sendForm(dados)
+            return false;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/* Zerar as margens, preenchimentos e bordas */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+form,
+fieldset,
+legend,
+figure,
+blockquote,
+button,
+input,
+textarea,
+pre,
+code,
+blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Definir a caixa de modelo como 'border-box' para facilitar o dimensionamento */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remover os estilos de lista padrão */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remover a decoração de links padrão */
+a {
+    text-decoration: none;
+}
+
+/* Remover estilos de lista para elementos de descrição */
+dl {
+    margin-bottom: 0;
+}
+
+/* Remover a decoração de sublinhado para títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+}
+
+/* Remover estilos de botão padrão */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Remover estilos de campo de entrada padrão */
+input,
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Zerar o espaçamento entre elementos inline */
+img,
+span {
+    vertical-align: top;
+}
+
+/* Definir fonte padrão e tamanho */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}

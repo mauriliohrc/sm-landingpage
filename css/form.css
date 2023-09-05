@@ -1,0 +1,77 @@
+.contact-section {
+  min-height: 400px;
+  width: 100%;
+
+  padding: 0 !important;
+  background-color: rgb(233, 233, 233);
+  background-image: url("../img/bg_tab.png");
+  background-repeat: repeat;
+  background-size: contain;
+
+  background-image: url("../img/bg_tab.png"),
+    linear-gradient(
+      0deg,
+      hsl(0deg 0% 99%) 0%,
+      hsl(0deg 3% 98%) 11%,
+      hsl(0deg 3% 96%) 20%,
+      hsl(0deg 4% 94%) 29%,
+      hsl(0deg 4% 93%) 38%,
+      hsl(0deg 4% 91%) 47%,
+      hsl(0deg 4% 89%) 56%,
+      hsl(0deg 4% 88%) 66%,
+      hsl(0deg 4% 86%) 78%,
+      hsl(0deg 4% 85%) 100%
+    );
+}
+
+.contact-container {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 800px;
+}
+
+.contact-title {
+  padding-top: 60px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-icon input {
+  font-family: "Comfortaa", cursive;
+  padding-left: 50px;
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
