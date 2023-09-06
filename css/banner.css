@@ -89,6 +89,7 @@
   width: 90%;
   height: 60px;
   justify-content: center;
+  
   padding: 10px 10px 10px 10px;
   margin: 5px 0 5px 0;
 
@@ -126,10 +127,16 @@
   margin-top: 11px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   .banner {
     text-align: center;
     justify-content: center;
+  }
+  
+  .homem {
+    height: 400px;
+    right: 10%;
+    top: 150px;
   }
 
   #limpe-seu-nome {
@@ -144,13 +151,25 @@
   }
 
   .faca-seu-orcamento {
-    min-width: 400px;
-    margin: 50px;
+    padding: 20px;
+    min-width: 250px;
+    margin: 0 20px;
+    min-height: 0;
+    bottom: 40px;
+  }
+  
+  .faca-seu-orcamento p {
+    font-size: 35px;
   }
 
-  .homem {
-    height: 465px;
-    max-height: 400px;
+  .faca-seu-orcamento img {
+    width: 250px;
+    padding: 10px 0;
+  }
+  
+  .formulario2 input {
+    font-size: 17px;
+    padding: 0 20px;
   }
 
   .botao-orcamento-form {

@@ -176,3 +176,22 @@ body {
 #img-rodape {
     width: 100%;
 }
+
+@media only screen and (max-width: 480px) {
+  .block-container {
+    margin: 0;
+  }
+  
+  .block {
+    width: 300px;
+  }
+
+  .block a {
+    font-size: 20px;
+  }
+
+  .instagram p { 
+    font-size: 50px;
+    margin: 10px 0;
+  }
+}
