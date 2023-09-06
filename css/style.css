@@ -177,6 +177,12 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+  #sombra {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .block-container {
     margin: 0;
