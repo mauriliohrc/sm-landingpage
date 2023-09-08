@@ -13,6 +13,7 @@
 
 .titulo {
   font-size: 90px;
+  margin: 30px 0;
   font-weight: bold;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }

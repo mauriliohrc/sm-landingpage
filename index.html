@@ -39,18 +39,19 @@
 </head>
 
 <body>
+  
   <header id="menu">
     <nav class="navbar">
       <div class="logo">
         <img src="img/logo.png" alt="Soluções Moura" id="logo">
         <img src="img/lgpd.png" alt="Soluções Moura" id="logo">
       </div>
-
+  
       <ul class="nav-links">
         <input onclick="menuShow()" type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <label for="checkbox_toggle" style="cursor: pointer;" class="hamburger">&#9776;</label>
         <div class="menu" id="menuMobile">
-          <li><a href="#" onclick="scrollToSection('sobre')" >SOBRE NÓS</a></li>
+          <li><a href="./quem-somos.html">SOBRE NÓS</a></li>
           <li><a href="#" onclick="scrollToSection('servicos')">SERVIÇOS</a></li>
           <li><a href="#" onclick="scrollToSection('perguntas-frequentes')">PERGUNTAS FREQUENTES</a></li>
           <li><a href="#" onclick="scrollToSection('posts')">NOSSOS POSTS</a></li>
@@ -59,11 +60,8 @@
       </ul>
     </nav>
   </header>
-  <div>
-
-  </div>
-  <section id="sombra">
-  </section>
+  
+  <section id="sombra"></section>
 
   <section class="banner" style="position: relative;" id="banner">
     <picture>
@@ -385,8 +383,6 @@
     </div>
   </section>
 
-
-
   <section class="linha laranja">&nbsp;</section>
   <section class="banner2" id="banner2" style="position: relative;">
     <div class="frase-impacto-small" id="frase-impacto-small">
@@ -416,19 +412,17 @@
   </section>
   <section class="linha laranja">&nbsp;</section>
 
+  <button id="voltar-ao-topo" onclick="scrollAoTopo()">↑</button>
 
-  <header id="menu-rodape">
-    <div class="logo-rodape">
-      <img id="img-rodape" src="img/logo_rodape.png" alt="Soluções Moura">
-    </div>
-
-    <div class="menu2">
-
-    </div>
-
-  </header>
+  <div id="rodape"></div>
 
   <script>
+    const rodapeContainer = document.getElementById('rodape');
+    fetch('rodape.html').then(response => response.text())
+      .then(data => {
+        rodapeContainer.innerHTML = data;
+      });
+
     function menuShow() {
       let menuMobile = document.querySelector('#menuMobile');
 
@@ -444,8 +438,25 @@
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
-        menuShow();
+        if (window.innerWidth < 1200) {
+          menuShow();
+        }
     }
+
+    function scrollAoTopo() {
+      var section = document.getElementById('menu');
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("voltar-ao-topo").style.display = "block";
+      } else {
+          document.getElementById("voltar-ao-topo").style.display = "none";
+      }
+    };
 
     function sendForm(dados) {
       axios

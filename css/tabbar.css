@@ -18,6 +18,9 @@
       );
 }
 
+#sobre p {
+  padding: 20px 40px;
+} 
 
 .button-text {
     margin-left: 8px;
