@@ -1,10 +1,10 @@
 .servicos-legalizados {
   display: flex;
   width: 100%;
-  min-height: 700px;
-  background-color: white;
-  padding: 50px 30px 10px 50px;
+  height: auto;
 
+  background-color: white;
+  padding: 50px 80px;
   background-image: url("../img/logo_cinza.png");
   background-repeat: no-repeat, repeat;
   background-size: contain;
@@ -80,4 +80,55 @@
 
 .verde {
   border-bottom: 6px #64bd7a solid;
+}
+
+@media only screen and (max-width: 1200px) {
+  .servicos-legalizados {
+    flex-direction: column;
+  }
+
+  .servicos-videos {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .servicos-legalizados {
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .flex-1 {
+    flex: none !important;
+  }
+  .servicos-legalizados .titulo{
+    font-size: 30px !important;
+    margin-top: 40px;
+  }
+
+  .linha-revolucione {
+    display: none;
+  }
+
+  .servicos-videos {
+    margin: 15px 0;
+
+    height: 450px !important;
+  }
+
+  .servicos-videos p {
+    font-size: 25px !important;
+  }
+
+  .revolucione-class {
+    line-height: 1 !important;
+    width: 250px !important;
+  }
+  .texto-servico{
+    font-size: 12px !important;
+  }
+
+  .servicos-videos {
+    height: 800px;
+  }
 }
