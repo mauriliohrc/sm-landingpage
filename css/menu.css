@@ -10,7 +10,6 @@
   z-index: 900;
   font-weight: bold;
   padding: 15px 30px 30px 35px;
-  width: 360px;
   font-size: 32px;
   height: 100%;
 }
@@ -19,10 +18,15 @@
   max-height: 65px !important;
 }
 
+.logo img + img {
+  margin-left: 20px;
+} 
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 40px;
   height: 100px;
   background: rgb(255, 255, 255);
 
@@ -35,8 +39,11 @@
 
 .nav-links a {
   color: black;
-  font-weight: bold;
-  padding-right: 30px;
+  font-weight: 400;
+}
+
+.nav-links li {
+  padding-right: 30px !important;
 }
 
 .menu {
@@ -44,6 +51,11 @@
   font-size: 25px;
   font-weight: 300;
   font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.menu li:hover a{
+  font-weight: 700;
+  border-bottom: 2px solid black;
 }
 
 .openMenu {
@@ -61,6 +73,7 @@
 
 .menu li {
   padding: 5px 14px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -132,9 +145,6 @@ input[type="checkbox"] {
     color: #f1f1f1;
   }
 
-  .menu li:hover {
-    opacity: 0.3;
-  }
   .menu li + li {
     margin-top: 12px;
   }

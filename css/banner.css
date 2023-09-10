@@ -127,12 +127,10 @@
   margin-top: 11px;
 }
 
-@media only screen and (max-width: 1680px) {
+@media only screen and (max-width: 1400px) {
   #limpe-seu-nome {
-    margin: 50px;
-    font-size: 50px;
-    align-items: center;
-    justify-content: center;
+    font-size: 90px;
+    min-width: 0;
   }
 }
 

@@ -4,20 +4,21 @@
 
 .banner2 {
   display: flex;
-  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 0;
   background-color: #2ba64e;
   margin-top: 0px;
   width: 100%;
-  min-height: 900px;
-  max-height: 900px;
   z-index: 300;
   overflow: hidden;
 
   background-image: url("../img/logo_negativa_bg.png");
-  background-size: 50%;
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 10%;
+  background-position-y: 50%;
 }
 
 #logo-negativa-banner-bottom {
@@ -33,15 +34,15 @@
 }
 
 #frase-impacto {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
   justify-content: center;
-  min-width: 800px;
   min-height: 300px;
   color: white;
-  right: 0;
-  padding-top: 80px;
   text-align: revert;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
@@ -66,12 +67,9 @@
 }
 
 .faca-seu-orcamento-bottom {
-  border-radius: 40px;
-  position: absolute;
-  margin: 47px 0px 116px -30px;
+  border-radius: 0 40px 40px 0;
   padding-top: 27px;
-  bottom: -48px;
-  min-width: 800px;
+  width: 50%;
   min-height: 368px;
   background-color: white;
   text-align: center;
@@ -141,6 +139,7 @@
   }
 
   .faca-seu-orcamento-bottom {
+    border-radius: 40px;
     padding: 20px;
     position: relative;
     margin: 0 auto;

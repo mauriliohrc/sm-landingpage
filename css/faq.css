@@ -45,6 +45,7 @@
 
 .faq-answer {
   max-height: 0;
+  margin: 0 0 0 10px;
   overflow: hidden;
   transition: max-height 0.3s;
 }
