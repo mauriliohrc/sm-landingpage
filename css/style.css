@@ -220,7 +220,7 @@ body {
 }
 
 .eapps-instagram-feed-posts-item {
-  width: calc(33.3333% - 90px) !important;
+  width: calc(33.3333% - 50px) !important;
   border-radius: 20px !important;
   border: 1px solid #ccc !important;
 }
